@@ -471,20 +471,20 @@ _Tại sao:_
 
 
 <a name="logging"></a>
-## 8. Logging
+## 8. Ghi Log
 
-![Logging](/images/logging.png)
+![Ghi log](/images/logging.png)
 
-* Avoid client-side console logs in production
+* Tránh ghi log phía client trong chế độ production
 
-    _Why:_
-    > Even though your build process can (should) get rid of them, make sure that your code style checker warns you about leftover console logs.
+    _Tại sao:_
+    > Mặc dù tiến trình chạy của bạn có thể (nên) lấy ra của chúng, đảm bảo rằng định dạng code kiểm tra của bạn cảnh báo cho bạn về những phần còn lại của console log.
 
-* Produce readable production logging. Ideally use logging libraries to be used in production mode (such as [winston](https://github.com/winstonjs/winston) or
+* Tạo ra log cho production có thể đọc được. Ý tưởng sử dụng các thư viện ghi log được sử dụng trong chế độ production (giống như [winston](https://github.com/winstonjs/winston) hoặc
 [node-bunyan](https://github.com/trentm/node-bunyan)).
 
-    _Why:_
-    > It makes your troubleshooting less unpleasant with colorization, timestamps, log to a file in addition to the console or even logging to a file that rotates daily. [read more...](https://blog.risingstack.com/node-js-logging-tutorial/)
+    _Tại sao:_
+    > Nó làm cho việc xử lý sự cố của bạn đỡ khó chịu hơn với màu, thời gian ghi log ra file bổ sung cho console hoặc ghi log ra một file hàng ngày. [đọc thêm...](https://blog.risingstack.com/node-js-logging-tutorial/)
 
 
 <a name="api"></a>
